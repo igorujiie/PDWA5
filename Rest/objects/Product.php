@@ -45,7 +45,7 @@ function read(){
 function readByid(){
   
     // select  query
-    $query = "SELECT  FROM " . $this->table_name . " WHERE id = ?";
+    $query = "SELECT  FROM " . $this->table_name . " WHERE id = :id";
   
     // prepare query statement
     $stmt = $this->conn->prepare($query);
